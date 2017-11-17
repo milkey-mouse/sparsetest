@@ -1,0 +1,5 @@
+sparsetest
+core
+*.o
+*.a
+*.out
