@@ -26,12 +26,6 @@ int main(int argc, char **argv)
 
     uint32_t length;
     struct sparse_extent *scan = scan_extents(fd, &length);
-    if (scan == NULL)
-    {
-        fputs("ioctl() failed\n", stderr);
-        close(fd);
-        return 1;
-    }
 
     for (uint32_t i = 0; i < length; i++)
     {
